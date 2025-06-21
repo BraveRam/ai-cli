@@ -1,9 +1,13 @@
 from groq import Groq
 from rich.console import Console
 from rich.markdown import Markdown
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 console = Console()
-client = Groq(api_key="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")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 messages = []
 
@@ -32,18 +36,3 @@ if __name__ == "__main__":
         messages.append({"role": "user", "content": user_input})
         print("Groq:", end=" ")
         ask_groq(messages)
-        print()
-
-
-
-
-
-# md_text = """
-# # Heading
-
-# **Bold text**, *italic text*, and `code`.
-
-# - List item 1
-# - List item 2
-# """
-
