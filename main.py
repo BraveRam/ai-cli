@@ -47,7 +47,7 @@ def ask_groq(messages):
         thread.start()
 
         completion = client.chat.completions.create(
-            model="meta-llama/llama-4-scout-17b-16e-instruct",
+            model="deepseek-r1-distill-llama-70b",
             messages=messages,
             temperature=1,
             max_completion_tokens=1024,
@@ -88,4 +88,3 @@ if __name__ == "__main__":
         messages.append({"role": "user", "content": user_input})
         print("Groq:", end=" ")
         ask_groq(messages)
-        
