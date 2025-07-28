@@ -66,7 +66,7 @@ def ask_groq(messages):
 2. Ensure you have an active internet connection.
 3. Run this on Windows (PowerShell): del $env:USERPROFILE/.tc_config
 4. Run this on Linux/macOS: rm ~/.tc_config
-5. Then rerun the script to re-enter your API key.\033[0m""")
+5. Then re-run the script to re-enter your API key.\033[0m""")
         loading = False
         thread.join()
         exit(1)
