@@ -25,4 +25,4 @@ python3 main.py
 ```
 When prompted, enter your API key to start using the CLI.
 
-Enjoy using AI-CLI! If you have any questions or issues, feel free to open an issue in this repository.
+If you have any questions or issues, feel free to open an issue in this repository.
